@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Подтверждение email</title>
+    <style>
+      .container { font-family: Arial, sans-serif; max-width: 600px; margin: 0
+      auto; } .button { display: inline-block; padding: 10px 20px;
+      background-color: #4CAF50; color: white; text-decoration: none;
+      border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <h1>Привет, {{name}}!</h1>
+      <p>Спасибо за регистрацию. Пожалуйста, подтвердите ваш email:</p>
+      <p>
+        <a href='{{verificationUrl}}' class='button'>Подтвердить email</a>
+      </p>
+      <p>Если вы не регистрировались, проигнорируйте это письмо.</p>
+      <p>Ссылка действительна 24 часа.</p>
+    </div>
+  </body>
+</html>
