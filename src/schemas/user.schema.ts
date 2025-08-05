@@ -127,6 +127,5 @@ export class User {
 
 export const UserSchema = SchemaFactory.createForClass(User);
 
-UserSchema.index({ email: 1 }, { unique: true, sparse: true });
 UserSchema.index({ roles: 1, isBanned: 1 });
 UserSchema.index({ verifiedEmail: 1, verifiedPhone: 1 });

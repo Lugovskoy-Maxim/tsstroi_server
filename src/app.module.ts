@@ -7,7 +7,9 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { getMongoConfig } from './configs/mongo.config';
 import { UsersModule } from './users/users.module';
 import { JwtModule } from '@nestjs/jwt';
-import { MailModule } from './mail/mail.module';
+import { VehiclesModule } from './vehicles/vehicle.module';
+import { OrganizationModule } from './organizations/organization.module';
+import { DriverModule } from './drivers/driver.module';
 
 @Module({
   imports: [
@@ -24,6 +26,9 @@ import { MailModule } from './mail/mail.module';
     ConfigModule.forRoot(),
     AuthModule,
     UsersModule,
+    VehiclesModule,
+    OrganizationModule,
+    DriverModule,
     // MailModule, // пока не работает хз почему 
   ],
   controllers: [AppController],
